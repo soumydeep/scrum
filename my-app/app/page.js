@@ -20,34 +20,34 @@ import Image from "next/image";
 
 const faqs = [
   {
-    question: "What is ZCRUM?",
+    question: "What is SCRUM?",
     answer:
-      "ZCRUM is a powerful project management tool designed to help teams organize, track, and manage their work efficiently. It combines intuitive design with robust features to streamline your workflow and boost productivity.",
+      "SCRUM is a powerful project management tool designed to help teams organize, track, and manage their work efficiently. It combines intuitive design with robust features to streamline your workflow and boost productivity.",
   },
   {
-    question: "How does ZCRUM compare to other project management tools?",
+    question: "How does SCRUM compare to other project management tools?",
     answer:
-      "ZCRUM offers a unique combination of intuitive design, powerful features, and flexibility. Unlike other tools, we focus on providing a seamless experience for both agile and traditional project management methodologies, making it versatile for various team structures and project types.",
+      "SCRUM offers a unique combination of intuitive design, powerful features, and flexibility. Unlike other tools, we focus on providing a seamless experience for both agile and traditional project management methodologies, making it versatile for various team structures and project types.",
   },
   {
-    question: "Is ZCRUM suitable for small teams?",
+    question: "Is SCRUM suitable for small teams?",
     answer:
-      "Absolutely! ZCRUM is designed to be scalable and flexible. It works great for small teams and can easily grow with your organization as it expands. Our user-friendly interface ensures that teams of any size can quickly adapt and start benefiting from ZCRUM's features.",
+      "Absolutely! SCRUM is designed to be scalable and flexible. It works great for small teams and can easily grow with your organization as it expands. Our user-friendly interface ensures that teams of any size can quickly adapt and start benefiting from SCRUM's features.",
   },
   {
-    question: "What key features does ZCRUM offer?",
+    question: "What key features does SCRUM offer?",
     answer:
-      "ZCRUM provides a range of powerful features including intuitive Kanban boards for visualizing workflow, robust sprint planning tools for agile teams, comprehensive reporting for data-driven decisions, customizable workflows, time tracking, and team collaboration tools. These features work seamlessly together to enhance your project management experience.",
+      "SCRUM provides a range of powerful features including intuitive Kanban boards for visualizing workflow, robust sprint planning tools for agile teams, comprehensive reporting for data-driven decisions, customizable workflows, time tracking, and team collaboration tools. These features work seamlessly together to enhance your project management experience.",
   },
   {
-    question: "Can ZCRUM handle multiple projects simultaneously?",
+    question: "Can SCRUM handle multiple projects simultaneously?",
     answer:
-      "Yes, ZCRUM is built to manage multiple projects concurrently. You can easily switch between projects, and get a bird's-eye view of all your ongoing work. This makes ZCRUM ideal for organizations juggling multiple projects or clients.",
+      "Yes, SCRUM is built to manage multiple projects concurrently. You can easily switch between projects, and get a bird's-eye view of all your ongoing work. This makes ZCRUM ideal for organizations juggling multiple projects or clients.",
   },
   {
     question: "Is there a learning curve for new users?",
     answer:
-      "While ZCRUM is packed with features, we've designed it with user-friendliness in mind. New users can quickly get up to speed thanks to our intuitive interface, helpful onboarding process, and comprehensive documentation.",
+      "While SCRUM is packed with features, we've designed it with user-friendliness in mind. New users can quickly get up to speed thanks to our intuitive interface, helpful onboarding process, and comprehensive documentation.",
   },
 ];
 
@@ -77,18 +77,18 @@ export default function Home() {
   return (
   <div className="min-h-screen">
     {/* hero Section */}
-    <section className="container mx-auto py-20 text-center">
+    <section className="container mx-auto py-10 text-center">
       <h1 className="text-6xl sm:text-7xl 1g:text-8xl font-extrabold gradient-title pb-6 flex flex-col">
-        StreamLine your WorkFlow<br/>
+        StreamLine your WorkFlow <br/>
      
       <span className="flex mx-auto gap-3 sm:gap-4 items-center">
-            with
+      with
             <Image
               src={"/logo.png"}
               alt="Zscrum Logo"
               width={400}
-              height={80}
-              className="h-14 sm:h-24 w-auto object-contain"
+              height={100}
+              className="h-54 sm:h-24 w-auto object-contain"
             />
           </span>
           </h1>
@@ -162,7 +162,7 @@ export default function Home() {
             Ready to Transform Your Workflow?
           </h3>
           <p className="text-xl mb-12">
-            Join thousands of teams already using ZCRUM to streamline their
+            Join thousands of teams already using SCRUM to streamline their
             projects and boost productivity.
           </p>
           <Link href="/onboarding">

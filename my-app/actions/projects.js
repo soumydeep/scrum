@@ -44,7 +44,7 @@ export async function createProject(data) {
   }
 }
 
-export async function getProjects(projectId){
+export async function getProject(projectId){
     const {userId,orgId} = auth();
     if(!userId || !orgId){
         throw new Error("unauhorized");
@@ -60,12 +60,25 @@ export async function getProjects(projectId){
     }
 
     // get project
-     const projects = await db.project.findMany({
-        where: {organizationId: orgId},
-        orderBy:{createdAt:"desc"},
-     });
+    const project = await db.project.findUnique({
+      where: { id: projectId },
+      include: {
+        sprints: {
+          orderBy: { createdAt: "desc" },
+        },
+      },
+    });
+  
+    if (!project) {
+      throw new Error("Project not found");
+    }
+  
+    // Verify project belongs to the organization
+    if (project.organizationId !== orgId) {
+      return null;
+    }
 
-     return projects;
+     return project;
 }
 
 export async function deleteProject(projectId) {

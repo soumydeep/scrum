@@ -8,9 +8,9 @@ import { useEffect} from "react"
     const router=useRouter();
 
     useEffect(()=>{
-        if(organization){
-            router.push(`/organization/${organization.slug}`);
-        }
+        // if(organization){
+        //     router.push(`/organization/${organization.slug}`);
+        // }
     },[organization]);
   return (
     <div className="flex justify-center items-center pt-14"><OrganizationList 

@@ -1,7 +1,7 @@
 "use server"
 import Link from "next/link";
 import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
-import { getProjects } from "@/actions/projects";
+import { getProjects } from "@/actions/organizations";
 import DeleteProject from "./delete-project";
 
 

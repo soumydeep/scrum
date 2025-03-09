@@ -11,15 +11,15 @@ async function Header(){
   await checkUser();
     return (
     <header className="container mx-auto">
-        <nav className="py-6 px-4 flex justify-between items-center">
+        <nav className="py-4 px-2 flex justify-between items-center">
         <Link href="/">
           <h1 className="text-2xl font-bold">
             <Image
               src={"/logo.png"}
               alt="Zscrum Logo"
-              width={200}
+              width={100}
               height={56}
-              className="h-10 w-auto object-contain"
+              className="h-25 w-auto object-contain"
             />
           </h1>
         </Link>
